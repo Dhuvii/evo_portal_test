@@ -51,7 +51,79 @@ const Landing = () => {
     <>
       {/* hero section */}
       <section className="relative">
-        <Hero_1 />
+        <div className="relative inset-0 overflow-hidden">
+          <div className="absolute inset-0 z-10 bg-gradient-to-br from-primaryColor to-indigo-300 mix-blend-multiply"></div>
+          <img
+            className="w-full h-full absolute inset-0 object-cover grayscale opacity-50"
+            src="https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
+
+          <Container className="w-full relative z-10 pt-20 pb-40">
+            <div className="w-full flex items-start justify-between gap-20">
+              {/* title */}
+              <div className="w-full flex flex-col items-start justify-center">
+                <h1 className="w-full max-w-4xl text-5xl md:text-6xl font-normal text-white">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                </h1>
+
+                <h3 className="w-full max-w-md md:max-w-xl mt-10 text-sm md:text-lg text-gray-100">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Maxime numquam asperiores dolore consectetur corrupti
+                  inventore necessitatibus dolores tempora sequi mollitia!
+                </h3>
+              </div>
+              {/* title */}
+
+              {/* card */}
+              <div className="hidden md:block p-1 border border-gray-400 rounded-2xl">
+                <div className="p-5 px-8 rounded-xl border border-gray-300 bg-white shadow-xl">
+                  <div className="w-full p-1 flex items-center justify-between rounded-full border shadow-sm">
+                    <div className="px-2 py-1 tracking-wide whitespace-nowrap rounded-full bg-indigo-100 text-sm font-medium text-indigo-600 border">
+                      Im an Employee
+                    </div>
+                    <div className="px-2 py-1 tracking-wide  whitespace-nowrap rounded-full text-sm font-medium text-gray-600">
+                      Im an Employer
+                    </div>
+                  </div>
+
+                  <div className="mt-8">
+                    <div className="w-max p-2 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center">
+                      <svg className="w-8 h-8" viewBox="0 0 20 20">
+                        <g fill="currentColor">
+                          <path
+                            fillRule="evenodd"
+                            d="M6 3.75A2.75 2.75 0 0 1 8.75 1h2.5A2.75 2.75 0 0 1 14 3.75v.443c.572.055 1.14.122 1.706.2C17.053 4.582 18 5.75 18 7.07v3.469c0 1.126-.694 2.191-1.83 2.54c-1.952.599-4.024.921-6.17.921s-4.219-.322-6.17-.921C2.694 12.73 2 11.665 2 10.539V7.07c0-1.321.947-2.489 2.294-2.676A41.047 41.047 0 0 1 6 4.193V3.75Zm6.5 0v.325a41.622 41.622 0 0 0-5 0V3.75c0-.69.56-1.25 1.25-1.25h2.5c.69 0 1.25.56 1.25 1.25ZM10 10a1 1 0 0 0-1 1v.01a1 1 0 0 0 1 1h.01a1 1 0 0 0 1-1V11a1 1 0 0 0-1-1H10Z"
+                            clipRule="evenodd"
+                          />
+                          <path d="M3 15.055v-.684c.126.053.255.1.39.142c2.092.642 4.313.987 6.61.987c2.297 0 4.518-.345 6.61-.987c.135-.041.264-.089.39-.142v.684c0 1.347-.985 2.53-2.363 2.686a41.454 41.454 0 0 1-9.274 0C3.985 17.585 3 16.402 3 15.055Z" />
+                        </g>
+                      </svg>
+                    </div>
+                    <h3 className="mt-2 text-2xl font-medium text-gray-800">
+                      Post a job today
+                    </h3>
+
+                    <p className="mt-2 w-full max-w-xs leading-6 text-sm text-gray-600">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Libero corrupti sequi quasi assumenda velit nulla nobis?
+                    </p>
+                  </div>
+
+                  <div className="mt-5 w-full">
+                    <PrimaryBtn className="w-full">
+                      Post a featured Job
+                    </PrimaryBtn>
+
+                    <button className="mt-2 w-full text-sm text-center text-gray-600 hover:text-gray-800">
+                      or post a free job
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </Container>
+        </div>
 
         {/* search */}
         <div className="absolute z-10 inset-x-0 -bottom-[4.5rem] px-3 flex items-center justify-center">
@@ -854,108 +926,3 @@ const Landing = () => {
 };
 
 export default Landing;
-
-const Hero_1 = () => {
-  return (
-    <div className="relative inset-0 overflow-hidden">
-      <div className="absolute inset-0 z-10 bg-gradient-to-br from-indigo-900 to-indigo-300 mix-blend-multiply"></div>
-      <img
-        className="w-full h-full absolute object-cover inset-x-0 grayscale opacity-50"
-        src="https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-        alt=""
-      />
-
-      <Container className="relative z-10 w-full pt-28 pb-36">
-        <div className="w-full">
-          {/* title */}
-          <h1 className="w-full text-center max-w-3xl mx-auto text-5xl md:text-6xl font-normal text-white">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          </h1>
-
-          <h3 className="w-full mt-16 text-center mx-auto max-w-md md:max-w-xl text-sm md:text-lg text-gray-100">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
-            numquam asperiores dolore consectetur corrupti inventore
-            necessitatibus dolores tempora sequi mollitia!
-          </h3>
-          {/* title */}
-        </div>
-      </Container>
-    </div>
-  );
-};
-
-const Hero_2 = () => {
-  return (
-    <div className="relative inset-0 overflow-hidden">
-      <div className="absolute inset-0 z-10 bg-gradient-to-br from-primaryColor to-indigo-300 mix-blend-multiply"></div>
-      <img
-        className="w-full h-full absolute inset-0 object-cover grayscale opacity-50"
-        src="https://images.pexels.com/photos/1595385/pexels-photo-1595385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-        alt=""
-      />
-
-      <Container className="w-full relative z-10 pt-20 pb-40">
-        <div className="w-full flex items-start justify-between gap-20">
-          {/* title */}
-          <div className="w-full flex flex-col items-start justify-center">
-            <h1 className="w-full max-w-4xl text-5xl md:text-6xl font-normal text-white">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            </h1>
-
-            <h3 className="w-full max-w-md md:max-w-xl mt-10 text-sm md:text-lg text-gray-100">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime
-              numquam asperiores dolore consectetur corrupti inventore
-              necessitatibus dolores tempora sequi mollitia!
-            </h3>
-          </div>
-          {/* title */}
-
-          {/* card */}
-          <div className="hidden md:block p-1 border border-gray-400 rounded-2xl">
-            <div className="p-5 px-8 rounded-xl border border-gray-300 bg-white shadow-xl">
-              <div className="w-full p-1 flex items-center justify-between rounded-full border shadow-sm">
-                <div className="px-2 py-1 tracking-wide whitespace-nowrap rounded-full bg-indigo-100 text-sm font-medium text-indigo-600 border">
-                  Im an Employee
-                </div>
-                <div className="px-2 py-1 tracking-wide  whitespace-nowrap rounded-full text-sm font-medium text-gray-600">
-                  Im an Employer
-                </div>
-              </div>
-
-              <div className="mt-8">
-                <div className="w-max p-2 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center">
-                  <svg className="w-8 h-8" viewBox="0 0 20 20">
-                    <g fill="currentColor">
-                      <path
-                        fillRule="evenodd"
-                        d="M6 3.75A2.75 2.75 0 0 1 8.75 1h2.5A2.75 2.75 0 0 1 14 3.75v.443c.572.055 1.14.122 1.706.2C17.053 4.582 18 5.75 18 7.07v3.469c0 1.126-.694 2.191-1.83 2.54c-1.952.599-4.024.921-6.17.921s-4.219-.322-6.17-.921C2.694 12.73 2 11.665 2 10.539V7.07c0-1.321.947-2.489 2.294-2.676A41.047 41.047 0 0 1 6 4.193V3.75Zm6.5 0v.325a41.622 41.622 0 0 0-5 0V3.75c0-.69.56-1.25 1.25-1.25h2.5c.69 0 1.25.56 1.25 1.25ZM10 10a1 1 0 0 0-1 1v.01a1 1 0 0 0 1 1h.01a1 1 0 0 0 1-1V11a1 1 0 0 0-1-1H10Z"
-                        clipRule="evenodd"
-                      />
-                      <path d="M3 15.055v-.684c.126.053.255.1.39.142c2.092.642 4.313.987 6.61.987c2.297 0 4.518-.345 6.61-.987c.135-.041.264-.089.39-.142v.684c0 1.347-.985 2.53-2.363 2.686a41.454 41.454 0 0 1-9.274 0C3.985 17.585 3 16.402 3 15.055Z" />
-                    </g>
-                  </svg>
-                </div>
-                <h3 className="mt-2 text-2xl font-medium text-gray-800">
-                  Post a job today
-                </h3>
-
-                <p className="mt-2 w-full max-w-xs leading-6 text-sm text-gray-600">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Libero corrupti sequi quasi assumenda velit nulla nobis?
-                </p>
-              </div>
-
-              <div className="mt-5 w-full">
-                <PrimaryBtn className="w-full">Post a featured Job</PrimaryBtn>
-
-                <button className="mt-2 w-full text-sm text-center text-gray-600 hover:text-gray-800">
-                  or post a free job
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </Container>
-    </div>
-  );
-};
